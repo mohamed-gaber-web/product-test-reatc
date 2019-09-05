@@ -1,0 +1,123 @@
+@import '../../../public/SASS/color';
+@import '../../../public/SASS/mixin';
+
+@font-face {
+    font-family: font-menu;
+    src: url(../../assets/fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: font-head;
+    src: url(../../assets/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-head-reg;
+    src: url(../../assets/fonts/NotoSans-Regular.ttf);
+}
+
+
+%bg_cover{
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.header{
+    background: url('../../assets/images/m5-s1.png')no-repeat center center;
+    @extend %bg_cover;
+    width: 100%;
+    height: auto;
+    min-height: 650px;
+    z-index: 0;
+    position: relative;
+
+ 
+    
+    .sub-header{
+        z-index: 2000;
+        position: relative;
+
+        .logo h1{
+            padding-top: 45px;
+            color: $color-navbar;
+            font-family: font-head;
+            font-weight: bold;
+            font-size:30px;
+        }
+
+        .navbar-nav li a{
+            color: $color-navbar;
+            font-size: 15px;
+            text-transform: capitalize;
+            font-family: font-menu;
+            font-weight: 600;
+            margin-right: 15px;
+            &:hover{
+                background-color: #fff;
+            }
+        }
+        
+        .bg-light{
+            background-color: transparent !important;
+            margin-top: 11px;
+        }
+
+        .header-info{
+            margin-top: 51px;
+
+            ul{
+                list-style: none;
+
+                li a{
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+}
+.navbar-light .navbar-nav .show > 
+.nav-link, .navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav 
+.nav-link.active{background-color: #fff;}
+
+.header-text{
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+
+    h2{
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $color-header;
+        font-family: font-head;
+        font-weight: 600;
+        padding-bottom: 15px;
+    }
+    p{
+        color: $color-header;
+        font-family: font-head-reg; 
+        font-size: 18px;
+        font-weight: 500;
+        width: 50%;
+        line-height: 25px;
+    }
+}
+
+// Responsive 
+@media(min-width: 320px) and (max-width: 767px){
+
+    .header-text {
+        top: 40%;
+    }
+
+    .header{
+        width: 100%;
+        height: auto;
+    }
+
+    .header-text p{width: 100%;}
+}

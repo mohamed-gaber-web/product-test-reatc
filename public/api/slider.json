@@ -1,0 +1,22 @@
+{
+    "slider": [
+        {
+            "id": 1,
+            "image": "./assets/images/m5-s1.png",
+            "title": "Lorem ipsum dolor sit amet, consetetur",
+            "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+            "id": 2,
+            "image": "./assets/images/m5-s1.png",
+            "title": "Lorem ipsum dolor sit amet, consetetur",
+            "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        },
+        {
+            "id": 3,
+            "image": "./assets/images/m5-s1.png",
+            "title": "Lorem ipsum dolor sit amet, consetetur",
+            "content": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+        }
+    ]
+}

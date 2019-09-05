@@ -1,0 +1,91 @@
+@import '../../../public/SASS/color';
+@import '../../../public/SASS/mixin';
+
+@font-face {
+    font-family: font-menu;
+    src: url(../../assets/fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: font-head;
+    src: url(../../assets/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-head-reg;
+    src: url(../../assets/fonts/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: font-light;
+    src: url(../../assets/fonts/Quicksand-Light.ttf);
+}
+
+%HEADING_H3{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 40px 0 10px 0;
+    font-weight: 600;
+    font-family: font-head;
+}
+
+%HEADING_H4{
+    font-size: 15px;
+    color: #888888;
+    text-transform: capitalize;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: font-light;
+}
+
+%bg_footer{
+    background: url('../../assets/images/footer_bg.png') no-repeat ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 266px;
+}
+
+.footer{
+    background-color: #f5f5fa;
+    height: 513px;
+    
+
+    .bg-footer{
+      @extend %bg_footer;
+    }
+
+    h3{
+        @extend %HEADING_H3;
+        color: #606193;
+    }
+
+    p{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #888888;
+        width: 80%;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+
+        li{
+            color: #888888;
+            font-size: 15px;
+            font-weight: 600;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+    }
+
+    h4{
+        @extend %HEADING_H4;
+        line-height: 28px;
+
+    }
+}

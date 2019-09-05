@@ -1,0 +1,27 @@
+@import '../../../public/SASS/color';
+@import '../../../public/SASS/mixin';
+
+@font-face {
+    font-family: font-menu;
+    src: url(../../assets/fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: font-head;
+    src: url(../../assets/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-head-reg;
+    src: url(../../assets/fonts/NotoSans-Regular.ttf);
+}
+
+.category__section{
+    h1{
+        @include heading_h1(font-head);
+    }
+
+    h3{
+         @include heading_h3(font-head-reg);
+    }
+}

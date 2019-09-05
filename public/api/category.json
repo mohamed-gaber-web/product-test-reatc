@@ -1,0 +1,24 @@
+{
+    "category": [
+        {
+            "id": 1,
+            "image": "assets/images/category/grid_3.jpg",
+            "title": "coffeepots"
+        },
+        {
+            "id": 2,
+            "image": "assets/images/category/grid_1.jpg",
+            "title": "fashion"
+        },
+        {
+            "id": 3,
+            "image": "assets/images/category/grid_13.jpg",
+            "title": "shoes"
+        },
+        {
+            "id": 4,
+            "image": "assets/images/category/grid_15.jpg",
+            "title": "windsor chair"
+        }
+    ]
+}

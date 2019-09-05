@@ -1,0 +1,85 @@
+@import '../../../public/SASS/color';
+@import '../../../public/SASS/mixin';
+
+@font-face {
+    font-family: font-menu;
+    src: url(../../assets/fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: font-head;
+    src: url(../../assets/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-head-reg;
+    src: url(../../assets/fonts/NotoSans-Regular.ttf);
+}
+
+.header2{
+
+    background-color: #f5f5fa !important;
+    min-height: 200px !important;
+
+    .header-info{
+        margin-top: 55px;
+
+        ul{
+            list-style: none;
+
+            li{
+                font-size: 30px;
+            }
+        }
+    }
+    
+    .sub-header{
+        z-index: 2000;
+        position: relative;
+
+        .logo h1{
+            padding-top: 45px;
+            color: $color-navbar;
+            font-family: font-head;
+            font-weight: bold;
+            font-size:30px;
+        }
+
+        .navbar-nav li a{
+            color: $color-navbar;
+            font-size: 15px;
+            text-transform: capitalize;
+            font-family: font-menu;
+            font-weight: 600;
+            margin-right: 15px;
+            &:hover{
+                background-color: #fff;
+            }
+        }
+        
+        .bg-light{
+            background-color: transparent !important;
+            margin-top: 11px;
+        }
+
+    }
+}
+.navbar-light .navbar-nav .show > 
+.nav-link, .navbar-light .navbar-nav .active > .nav-link, 
+.navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav 
+.nav-link.active{background-color: #fff;}
+
+
+
+// Responsive 
+@media(min-width: 320px) and (max-width: 767px){
+
+    .header-text {
+        top: 40%;
+    }
+
+    .header{
+        width: 100%;
+        height: auto;
+    }
+}

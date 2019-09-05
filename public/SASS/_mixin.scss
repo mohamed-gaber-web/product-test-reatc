@@ -1,0 +1,59 @@
+@import './color';
+
+@mixin heading_h1($font){
+    font-size: 30px;
+    color: $color-heading-h1;
+    padding: 40px 0;
+    font-family: $font; 
+    text-transform: capitalize;
+    text-align: center;
+}
+
+@mixin heading_h3($font){
+    font-size: 18px;
+    color: $color-heading-h1;
+    margin: 20px 20px;
+    font-family: $font; 
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: 600;
+}
+
+@mixin Background_Color($color, $height) {
+    background-color: $color;
+    -webkit-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: $height;
+}
+
+@mixin BUTTON($font-family, $padding){
+    background-color: $color-btn-dark;
+    padding: $padding;
+    color: #fefefe;
+    font-family: $font-family;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 30px;
+    font-size: 14px;
+    -webkit-transition: background 0.4s ease-in-out;
+    -o-transition: background 0.4s ease-in-out;
+    -moz-transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out;
+}
+
+@mixin BUTTON_trans($font-family, $padding){
+    background-color: transparent;
+    padding: $padding;
+    color: #333;
+    font-family: $font-family;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 30px;
+    font-size: 14px;
+    border: 1px solid #e2dede;
+}

@@ -1,0 +1,60 @@
+@import '../../../public/SASS/color';
+@import '../../../public/SASS/mixin';
+
+@font-face {
+    font-family: font-menu;
+    src: url(../../assets/fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: font-head;
+    src: url(../../assets/fonts/NotoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: font-head-reg;
+    src: url(../../assets/fonts/NotoSans-Regular.ttf);
+}
+
+.offer__product{
+
+    .offer{
+        background-color: #fff;
+        height: 470px;
+        margin: 40px 0;
+        -webkit-box-shadow: 2px 2px 6px 0px #f2f2f2;
+        -moz-box-shadow: 2px 2px 6px 0px #f2f2f2;
+        -o-box-shadow: 2px 2px 6px 0px #f2f2f2;
+        box-shadow: 2px 2px 6px 0px #f2f2f2;
+    }
+    h1{
+        @include heading_h1(font-head);
+    }
+
+    h3{
+         @include heading_h3(font-head-reg);
+         font-size: 16px;
+         margin: 20px 0;
+         text-align: center;
+    }
+
+    p{
+        font-size: 15px;
+        margin: 10px;
+        color: #8e8a8a;
+        text-align: center;
+    }
+
+    .price{
+        text-align: center;
+        color: $color-navbar;
+        font-family: font-head-reg;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    span{
+        text-decoration: line-through;
+    }
+}
